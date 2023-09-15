@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Dancing+Script&family=Major+Mono+Display&family=Zen+Maru+Gothic&display=swap');
+
+
+.container {
+    background-image: url('../../assets/img/Landing.jpg');
+    text-align: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo1{
+font-family: 'Cinzel', serif;
+font-size: 3rem;
+white-space: nowrap; /* Evita el salto de línea */
+overflow: hidden; /* Oculta el texto que aún no se ha escrito */
+border-right: 2px solid #000; /* Simula el cursor de escritura */
+animation: escritura-maquina 6s steps(40); /* Animación de escritura a máquina */
+}
+
+@keyframes escritura-maquina {
+  from {
+    width: 0; /* Inicia con una anchura de 0 */
+  }
+  to {
+    width: 60%; /* Llega a la anchura completa */
+  }
+}
+.yellow {
+    color: #ffd700;
+
+}
+
+.yellow:hover {
+  color: #a22f2f;
+}
+
+@media (max-width: 768px) {
+    .titulo1 {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
+
